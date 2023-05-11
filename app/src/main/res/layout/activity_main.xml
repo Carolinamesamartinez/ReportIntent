@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#364CA1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2_central"
+        android:layout_width="125dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@drawable/istockphoto_834927844_170667a__1_" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2_central"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/textView_introduccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_bold"
+            android:gravity="center_horizontal"
+            android:text="CHISPI Y SUS AMIGOS"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="23dp"
+                android:layout_height="49dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView_nombremascota"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Nombre de la mascota"
+                android:textAlignment="textStart"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/editText_nombremascota"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="23dp"
+                android:layout_height="49dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+
+            <Space
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView5_tipomascota"
+                android:layout_width="124dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Tipo de mascota"
+                android:textAlignment="textStart"
+                android:textColor="#FFFEFE"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <Spinner
+                android:id="@+id/spinner2_tipomascota"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:popupBackground="#364CA1"
+
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <Space
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView7_sexomascota"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Sexo de la mascota"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_sexomascota"
+                android:layout_width="305dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton8_smmacho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#FFFAFA"
+                    android:fontFamily="@font/aleo_bold"
+                    android:text="Macho"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold|italic"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9_smhembra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#E1D0D0"
+                    android:fontFamily="@font/aleo_bold"
+                    android:text="Hembra"
+                    android:textColor="#EFEFEF"
+                    android:textStyle="bold|italic"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <LinearLayout
+            android:layout_width="428dp"
+            android:layout_height="33dp">
+
+            <Space
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView8_personalidad"
+                android:layout_width="391dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Personalidad"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkBox_pcariñoso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFFFFF"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Cariñoso/a"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/checkBox3_pactivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#DDCECE"
+                android:buttonTint="#FFF7F7"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Activo/a"
+                android:textColor="#FFF3F3"
+                android:textStyle="bold|italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkBox6_ptranquilo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#EFEFEF"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Tranquilo/a   "
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/checkBox2_pagresivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#EAEAEA"
+                android:fontFamily="@font/aleo_bold"
+                android:text="Agresivo/a"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_colormascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:backgroundTint="#FFFFFF"
+            android:completionThreshold="1"
+            android:fontFamily="@font/aleo_bold"
+            android:gravity="center_horizontal"
+            android:hint="Indica el color de tu mascota"
+            android:popupBackground="#364CA1"
+            android:textColorHint="#D6C2C2"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_todovacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo_bold"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="109dp"
+                android:layout_height="57dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pruebaredondo"
+                android:backgroundTint="#FFFFFF"
+                android:text="Guardar"
+                android:textColor="#364CA1" />
+
+            <Space
+                android:layout_width="104dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
